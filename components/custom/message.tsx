@@ -7,6 +7,7 @@ import { ReactNode } from "react";
 import { BotIcon, UserIcon } from "./icons";
 import { Markdown } from "./markdown";
 import { PreviewAttachment } from "./preview-attachment";
+import { TheMomTest } from "./themomtest";
 import { Weather } from "./weather";
 import { AuthorizePayment } from "../flights/authorize-payment";
 import { DisplayBoardingPass } from "../flights/boarding-pass";
@@ -56,7 +57,8 @@ export const Message = ({
 
                 return (
                   <div key={toolCallId}>
-                    {toolName === "getWeather" ? (
+                    {toolName === "theMomTest" ? ( <TheMomTest />
+                    ) : toolName === "getWeather" ? (
                       <Weather weatherAtLocation={result} />
                     ) : toolName === "displayFlightStatus" ? (
                       <FlightStatus flightStatus={result} />
@@ -82,7 +84,8 @@ export const Message = ({
               } else {
                 return (
                   <div key={toolCallId} className="skeleton">
-                    {toolName === "getWeather" ? (
+                    {toolName === "theMomTest" ? ( <TheMomTest />
+                    ) : toolName === "getWeather" ? (
                       <Weather />
                     ) : toolName === "displayFlightStatus" ? (
                       <FlightStatus />

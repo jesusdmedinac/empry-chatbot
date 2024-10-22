@@ -21,15 +21,25 @@ import { Textarea } from "../ui/textarea";
 
 const suggestedActions = [
   {
-    title: "Help me book a flight",
-    label: "from San Francisco to London",
-    action: "Help me book a flight from San Francisco to London",
+    title: "Ayúdame a calcular",
+    label: "mis Units Economics",
+    action: "¿Podrías ayudarme a calcular las Units Economics de mi Startup?",
   },
   {
-    title: "What is the status",
-    label: "of flight BA142 flying tmrw?",
-    action: "What is the status of flight BA142 flying tmrw?",
+    title: "Ayúdame a evaluar",
+    label: "mis preguntas",
+    action: "¿Podrías ayudarme a evaluar mis preguntas para ver si pasan 'The Mom Test'?",
   },
+  {
+    title: "Ayúdame a entender",
+    label: "el tamaño del mercado",
+    action: "¿Podrías ayudarme a entender el tamaño del mercado de mi negocio?"
+  },
+  {
+    title: "Ayúdame a genera",
+    label: "mi Pitch Deck",
+    action: "¿Podrías ayudarme a generar una presentación de pitch deck profesional para mi Startup?"
+  }
 ];
 
 export function MultimodalInput({
