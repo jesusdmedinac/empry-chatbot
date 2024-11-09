@@ -115,7 +115,7 @@ export const History = ({ user }: { user: User | undefined }) => {
 
           <div className="text-sm flex flex-row items-center justify-between">
             <div className="flex flex-row gap-2">
-              <div className="dark:text-zinc-300">History</div>
+              <div className="dark:text-zinc-300">Historial</div>
 
               <div className="dark:text-zinc-400 text-zinc-500">
                 {history === undefined ? "loading" : history.length} chats
@@ -140,7 +140,7 @@ export const History = ({ user }: { user: User | undefined }) => {
               {!user ? (
                 <div className="text-zinc-500 h-dvh w-full flex flex-row justify-center items-center text-sm gap-2">
                   <InfoIcon />
-                  <div>Login to save and revisit previous chats!</div>
+                  <div>¡Inicia sesión para guardar y revisitar chats anteriores!</div>
                 </div>
               ) : null}
 

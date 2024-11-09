@@ -1,3 +1,4 @@
+import { Analytics } from "@vercel/analytics/react"
 import { Metadata } from "next";
 import { Toaster } from "sonner";
 
@@ -29,6 +30,7 @@ export default async function RootLayout({
           <Toaster position="top-center" />
           <Navbar />
           {children}
+          <Analytics />
         </ThemeProvider>
       </body>
     </html>
